@@ -1,0 +1,84 @@
+@import "../scss/reset";
+@import url('https://allfont.ru/allfont.css?fonts=bodoni-cyrillic');
+@import url('https://allfont.ru/allfont.css?fonts=ceremonious-one');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Bodoni Cyrillic';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 53.23px;
+    color: #000000;
+    // font-family: 'Ceremonious One', arial;
+    // font-family: 'Open Sans', sans-serif;
+}
+// <Переменные> ============================================================================================================================================
+$yellow: #ffc222;
+// </Переменные> ============================================================================================================================================
+
+// <Утилиты> ============================================================================================================================================
+.none {
+    display: none !important;
+}
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-left: -100000px;
+    background: transparent;
+    font-size: 0;
+}
+.no-scroll {
+    overflow: hidden;
+}
+// </Утилиты> ============================================================================================================================================
+
+// </Повторяшки> ============================================================================================================================================
+
+// </Повторяшки> ============================================================================================================================================
+
+// <Сетка> ============================================================================================================================================
+.container {
+    width: 3083.57px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+.container--header {
+    padding-right: 47.85px;
+}
+.main-bg {
+    width: 3912px;
+    height: 2176px;
+
+    background: #FEF5E0;
+}
+.main-bg--index {
+    padding-top: 16px;
+}
+.main-bg--griboedov {
+    width: 3840px;
+    height: auto;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+.body--index {
+    padding: 8px 13px 0px 14px;
+}
+// </Сетка> ============================================================================================================================================
+
+// <Импорт> ============================================================================================================================================
+
+@import "../scss/header";
+@import "../scss/main-content";
+@import "../scss/footer";
+@import "../scss/griboedov";
+@import "../scss/repeat";
+@import "../scss/gogol";
+@import "../scss/shiller";
+@import "../scss/shekspir";
+@import "../scss/ostrovskiy";
+@import "../scss/pushkin";

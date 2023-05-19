@@ -1,0 +1,36 @@
+.header {
+    padding: 12px 0px 63px 2.15px;
+}
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+.header__logo {
+}
+.header__heading {
+    position: relative;
+    width: 1984px;
+    height: 248px;
+    padding-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 111px;
+    color: #181E21;
+    &::before {
+        content: '';
+        width: 1984px;
+        height: 248px;
+        position: absolute;
+        left: 0;
+        top: -17px;
+
+        background-image: url(../img/heading.svg);
+        background-position: 0 0;
+        background-size: cover;
+
+    }
+}

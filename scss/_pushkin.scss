@@ -1,0 +1,9 @@
+.bg--pushkin {
+    &::before {
+        width: 780px;
+        height: 1394px;
+        bottom: -270px;
+
+        background-image: url(../img/content-bg/pushkin.png);
+    }
+}

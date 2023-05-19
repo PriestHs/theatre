@@ -1,0 +1,17 @@
+.bg {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        right: -408px;
+        bottom: -100px;
+        width: 879px;
+        height: 1399px;
+
+        background-image: url(../img/content-bg/griboedov.png);
+        background-position: 0 0;
+        background-size: cover;
+
+        z-index: 1;
+    }
+}

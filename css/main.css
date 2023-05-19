@@ -1,0 +1,515 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://allfont.ru/allfont.css?fonts=bodoni-cyrillic");
+@import url("https://allfont.ru/allfont.css?fonts=ceremonious-one");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+nav, footer, header, aside, section, main, legend {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+img, svg {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active, button:focus, button:active {
+  outline: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Bodoni Cyrillic";
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 53.23px;
+  color: #000000;
+}
+
+.none {
+  display: none !important;
+}
+
+.visually-hidden {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  display: block;
+  margin-left: -100000px;
+  background: transparent;
+  font-size: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  width: 3083.57px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container--header {
+  padding-right: 47.85px;
+}
+
+.main-bg {
+  width: 3912px;
+  height: 2176px;
+  background: #FEF5E0;
+}
+
+.main-bg--index {
+  padding-top: 16px;
+}
+
+.main-bg--griboedov {
+  width: 3840px;
+  height: auto;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+
+.body--index {
+  padding: 8px 13px 0px 14px;
+}
+
+.header {
+  padding: 12px 0px 63px 2.15px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.header__heading {
+  position: relative;
+  width: 1984px;
+  height: 248px;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 111px;
+  color: #181E21;
+}
+.header__heading::before {
+  content: "";
+  width: 1984px;
+  height: 248px;
+  position: absolute;
+  left: 0;
+  top: -17px;
+  background-image: url(../img/heading.svg);
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.main-content {
+  position: relative;
+  padding: 190px 0px 110px 0px;
+  background-color: #FFFAEE;
+}
+.main-content::before {
+  content: "";
+  position: absolute;
+  left: -415px;
+  top: 35px;
+  width: 2186.33px;
+  height: 1474px;
+  background-image: url(../img/main-content/vector-left.png);
+  background-size: cover;
+}
+
+.authors {
+  margin-left: 1279px;
+}
+.authors::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 21.79px;
+  width: 1054.73px;
+  height: 1495.84px;
+  background-image: url(../img/main-content/index-bg.jpg);
+  background-size: cover;
+  border-left: 8.11px solid #FFFAEE;
+}
+
+.authors__list {
+  width: 1340px;
+  display: flex;
+  flex-direction: column;
+}
+.authors__list li {
+  margin-bottom: 55px;
+  position: relative;
+}
+.authors__list li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 355px;
+  height: 355px;
+  background-image: url(../img/authors/griboedov.png);
+  background-position: 0 0;
+  background-size: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+.authors__list li:nth-child(even) {
+  display: flex;
+  justify-content: end;
+}
+.authors__list li:nth-child(even) a.authors__link::before {
+  right: 318px;
+}
+.authors__list li:nth-child(even) a.authors__link::after {
+  left: 40px;
+}
+.authors__list li:nth-child(even)::before {
+  right: -177.5px;
+}
+.authors__list li:nth-child(odd) a.authors__link {
+  justify-content: end;
+}
+.authors__list li:nth-child(odd) a.authors__link::before {
+  right: 40px;
+}
+.authors__list li:nth-child(odd) a.authors__link::after {
+  left: 318px;
+}
+.authors__list li:nth-child(odd)::before {
+  left: -177.5px;
+}
+.authors__list li:nth-child(1) {
+  margin-bottom: 34px;
+}
+.authors__list li:nth-child(1) a.authors__link {
+  padding-right: 153px;
+}
+.authors__list li:nth-child(2) a.authors__link {
+  padding-left: 253px;
+}
+.authors__list li:nth-child(2)::before {
+  background-image: url(../img/authors/gogol.png);
+}
+.authors__list li:nth-child(3) a.authors__link {
+  padding-right: 234px;
+}
+.authors__list li:nth-child(3)::before {
+  background-image: url(../img/authors/shiller.png);
+}
+.authors__list li:nth-child(4) a.authors__link {
+  padding-left: 209px;
+}
+.authors__list li:nth-child(4)::before {
+  background-image: url(../img/authors/shekspir.png);
+}
+.authors__list li:nth-child(5) a.authors__link {
+  padding-right: 150px;
+}
+.authors__list li:nth-child(5)::before {
+  background-image: url(../img/authors/ostrovskiy.png);
+}
+.authors__list li:nth-child(6) a.authors__link {
+  padding-left: 227px;
+}
+.authors__list li:nth-child(6)::before {
+  background-image: url(../img/authors/pushkin.png);
+}
+
+a.authors__link {
+  position: relative;
+  width: 1062px;
+  height: 145px;
+  display: flex;
+  align-items: center;
+  color: #181E21;
+  font-size: 72px;
+  line-height: 91px;
+  background-color: #EFC26D;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.4);
+  border-radius: 40px;
+}
+a.authors__link::before, a.authors__link::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  background-color: #181E21;
+  border-radius: 50px;
+}
+
+.footer {
+  padding: 64px 167.42px 62px 60px;
+  display: flex;
+  align-items: center;
+  gap: 43px;
+}
+
+.footer__text {
+  margin-top: 55px;
+  color: #2355D7;
+  font-size: 31px;
+}
+
+.footer__logo {
+  margin-top: 55px;
+}
+
+.footer_qr-code {
+  margin-left: auto;
+}
+
+.footer__btn {
+  margin-left: 1141.81px;
+  background-color: #FFFFFF;
+  border: 4px solid #C9C9C9;
+  border-radius: 30px;
+}
+.footer__btn a {
+  width: 366px;
+  height: 139px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 54px;
+  color: #C9C9C9;
+  line-height: 139px;
+}
+.footer__btn a:hover {
+  opacity: 0.8;
+}
+
+.griboedov {
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+.griboedov__wrapper {
+  padding-left: 66px;
+  display: flex;
+  gap: 169px;
+}
+
+.griboedov__list {
+  margin-top: 182px;
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+.griboedov__list li {
+  position: relative;
+}
+
+a.griboedov__link {
+  width: 893px;
+  min-height: 139px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #181E21;
+  font-size: 76px;
+  background-color: #FEF5E0;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.4);
+  border-radius: 35px;
+}
+a.griboedov__link::before, a.griboedov__link::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  background-color: #181E21;
+  border-radius: 50px;
+}
+a.griboedov__link::before {
+  left: 24px;
+}
+a.griboedov__link::after {
+  right: 24px;
+}
+
+a.griboedov__link--active {
+  background-color: #EFC26D;
+}
+
+.griboedov__info {
+  width: 1801px;
+  position: relative;
+}
+.griboedov__info::before {
+  content: "";
+  width: 1909px;
+  height: 439px;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.griboedov__heading {
+  width: 1261px;
+  margin: 0 auto 140px auto;
+  font-family: "Ceremonious One", arial;
+  text-align: center;
+  font-size: 130px;
+  line-height: 85px;
+  border-bottom: 3px solid #989A99;
+}
+
+.griboedov__text {
+  line-height: 1.1;
+  text-indent: 50px;
+}
+
+.bg {
+  position: relative;
+}
+.bg::before {
+  content: "";
+  position: absolute;
+  right: -408px;
+  bottom: -100px;
+  width: 879px;
+  height: 1399px;
+  background-image: url(../img/content-bg/griboedov.png);
+  background-position: 0 0;
+  background-size: cover;
+  z-index: 1;
+}
+
+.bg--gogol {
+  padding-bottom: 53px;
+}
+.bg--gogol::before {
+  width: 1019px;
+  height: 1307px;
+  bottom: -235px;
+  background-image: url(../img/content-bg/gogol.png);
+}
+
+.griboedov__heading--gogol {
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-family: "Bodoni Cyrillic";
+  line-height: 110px;
+}
+
+.main-bg--gogol {
+  padding-bottom: 0;
+}
+
+.bg--shiller::before {
+  width: 996px;
+  height: 1429px;
+  bottom: -295px;
+  background-image: url(../img/content-bg/shiller.png);
+}
+
+.bg--shekspir::before {
+  bottom: -265px;
+  width: 968px;
+  height: 1419px;
+  background-image: url(../img/content-bg/shekspir.png);
+}
+
+.bg--ostrovskiy::before {
+  width: 895px;
+  height: 1355px;
+  bottom: -265px;
+  background-image: url(../img/content-bg/ostrovskiy.png);
+}
+.bg--ostrovskiy li:nth-child(2) .griboedov__link, .bg--ostrovskiy li:nth-child(3) .griboedov__link {
+  padding: 17.3px 70px;
+  line-height: 95.68px;
+  text-align: center;
+}
+
+.bg--pushkin::before {
+  width: 780px;
+  height: 1394px;
+  bottom: -270px;
+  background-image: url(../img/content-bg/pushkin.png);
+}/*# sourceMappingURL=main.css.map */

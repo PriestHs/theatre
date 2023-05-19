@@ -1,0 +1,39 @@
+.footer {
+    padding: 64px 167.42px 62px 60px;    
+
+    display: flex;
+    align-items: center;
+    gap: 43px;
+}
+.footer__text {
+    margin-top: 55px;
+
+    color: #2355D7;
+    font-size: 31px;
+}
+.footer__logo {
+    margin-top: 55px;
+}
+.footer_qr-code {
+    margin-left: auto;
+}
+.footer__btn {
+    margin-left: 1141.81px;
+
+    background-color: #FFFFFF;
+    border: 4px solid #C9C9C9;
+    border-radius: 30px;
+    a {
+        width: 366px;
+        height: 139px;
+
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 54px;
+        color: #C9C9C9;
+        line-height: 139px;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

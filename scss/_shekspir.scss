@@ -1,0 +1,9 @@
+.bg--shekspir {
+    &::before {
+        bottom: -265px;
+        width: 968px;
+        height: 1419px;
+
+        background-image: url(../img/content-bg/shekspir.png);
+    }
+}

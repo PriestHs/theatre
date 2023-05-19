@@ -1,0 +1,19 @@
+.bg--gogol {
+    padding-bottom: 53px;
+    &::before {
+        width: 1019px;
+        height: 1307px;
+        bottom: -235px;
+        background-image: url(../img/content-bg/gogol.png);
+    }
+}
+.griboedov__heading--gogol {
+    margin-bottom: 50px;
+
+    font-size: 48px;
+    font-family: 'Bodoni Cyrillic';
+    line-height: 110px;
+}
+.main-bg--gogol {
+    padding-bottom: 0;
+}

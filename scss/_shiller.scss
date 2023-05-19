@@ -1,0 +1,9 @@
+.bg--shiller {
+    &::before {
+        width: 996px;
+        height: 1429px;
+        bottom: -295px;
+
+        background-image: url(../img/content-bg/shiller.png);
+    }
+}
